@@ -1,0 +1,289 @@
+@media screen and (max-width: 1920px) {
+    .container {
+    width: 99.9vw;
+    height: 99.9vh;
+    display: grid;
+    grid-template-columns: 61.8% 9.02% 5.58% 23.6%;
+    grid-template-rows: 61.8% 9.02% 5.58% 23.6%;
+    grid-template-areas: "A B B B" "A E E C" "A E E C" "A D D C";
+  }
+  
+  .item {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    border-radius: 20px;
+    /* font-weight: 700; */
+    /* text-shadow: 1px 1px 1px #878787; */
+    box-sizing: border-box;
+    border: 2px solid #000000;
+  }
+  
+  .ascii-art-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  canvas {
+    width: 100%;
+    height: 100%;
+  }
+  .item.a {
+    grid-area: A;
+    background-color: #232323;
+  }
+  
+  .item.b {
+    grid-area: B;
+    background-color: #f54e1f;
+  }
+  
+  .item.c {
+    grid-area: C;
+    background-color: #aae63f;
+  }
+  
+  .item.d {
+    grid-area: D;
+    background-color: #ab82f3;
+    color: #000000;
+    
+  }
+  
+  .item.e {
+    grid-area: E;
+    background-color: #727982;
+    color: #000000;
+
+  }
+  .mtext {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+  }
+  button{
+   background: none; 
+   cursor: pointer;
+  }
+  
+  .item.f {
+    grid-area: F;
+    background-color: #d7b121;
+
+  }
+  
+  .item.g {
+    grid-area: G;
+    background-color: #d8d6cb;
+    display: grid;
+    color: black;
+    font-size: 25px;
+
+  }
+  .slide{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    animation: slide-text 5s linear infinite;
+    white-space: nowrap;
+    font-size: 100px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+  }
+  @keyframes slide-text {
+    0% { 
+      left: 140%; 
+    }
+    100% { 
+      left: -140%; 
+    }
+  }
+    
+    .grid-container {
+      perspective: 800px;
+    }
+    
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-gap: 10px;
+      transform-style: preserve-3d;
+      transform: rotateX(60deg) translateZ(-200px);
+    }
+    
+    .grid div {
+      background-color: #ccc;
+      border: 1px solid #333;
+      padding: 20px;
+      text-align: center;
+    }
+    
+}
+  
+  .item.a .spline-design {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  @media (max-aspect-ratio: 1.618) {
+    .item {
+      font-size: 3vw;
+    }
+  }
+  
+  @media (min-aspect-ratio: 1.618) {
+    .item {
+      font-size: 5vh;
+    }
+  }
+
+  
+  @media screen and (max-width: 767px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "A A A A"
+        "B E E D"
+        "B E E D"
+        "B C C C";
+        }
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            color: white;
+            font-weight: 700;
+            border-radius: 20px;
+            /* text-shadow: 1px 1px 1px #878787; */
+            box-sizing: border-box;
+            border: 2px solid #000000;
+          }
+          .ascii-art-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          canvas {
+              width: 100%;
+              height: 100%;
+            }
+          .item.a {
+            grid-area: A;
+            background-color: #232323;
+          }
+          
+          .item.b {
+            grid-area: B;
+            background-color: #f54e1f;
+          }
+          
+          .item.c {
+            grid-area: C;
+            background-color: #aae63f;
+          }
+          
+          .item.d {
+            grid-area: D;
+            background-color: #ab82f3;
+          }
+          
+          .item.e {
+            grid-area: E;
+            background-color: #727982;
+          }
+          .mtext {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 0.9px;
+          }
+          
+          .item.f {
+            grid-area: F;
+            background-color: #d7b121;
+          }
+          
+          .item.g {
+            grid-area: G;
+            background-color: #d8d6cb;
+          }
+          
+          .item.a .spline-design {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+          }
+
+          .slide{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            position: relative;
+            animation: slide-text 5s linear infinite;
+            white-space: nowrap;
+            font-size: 75px;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 0.1px;
+          }
+          @keyframes slide-text {
+            0% { 
+              left: 300%; 
+            }
+            100% { 
+              left: -300%; 
+            }
+          }
+          .grid-container {
+            perspective: 800px;
+          }
+
+          .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-gap: 10px;
+            transform-style: preserve-3d;
+            transform: rotateX(60deg) translateZ(-200px);
+          }
+          
+          .grid div {
+            background-color: #ccc;
+            border: 1px solid #333;
+            padding: 20px;
+            text-align: center;
+          }
+          
+          
+          @media (max-aspect-ratio: 1.618) {
+            .item {
+              font-size: 3vw;
+            }
+          }
+          
+          @media (min-aspect-ratio: 1.618) {
+            .item {
+              font-size: 5vh;
+            }
+          }
+  }
